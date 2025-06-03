@@ -1,0 +1,312 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,*:before,*:after{
+box-sizing: border-box 
+}
+
+@media(max-width: 992px){
+	body{
+		margin-left: 12px;
+		margin-right: 12px;
+	}
+}
+
+@media(max-width: 767px){ 
+	body{
+		margin-left: 12px;
+		margin-right: 12px;
+	}
+}
+
+.header{
+	border-bottom: 1px gray solid;
+	max-width: 1920px;
+	display: flex;
+	justify-content: center;
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+.header a{
+	margin-left: 20px;
+	margin-right: 20px;
+	text-decoration: none;
+	color: black;
+	font-weight: 700px;
+}
+
+a:hover{
+	color: red;
+}
+
+.about-section{
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px black solid;
+	max-width: 1920px;
+	line-height: 150%;
+}
+
+.about{
+	width: 49%;
+	Height: auto;
+}
+
+.content{
+	width: 49%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 8px;
+}
+
+@media(max-width: 992px){
+	.about-section{
+		flex-direction: column;
+		align-items: center;
+	}
+	.about{
+		width: 100%;
+	}
+	.content{
+		width: 100%;
+	}
+	h3{
+		line-height: 150%;
+		margin-bottom: 48px;
+	}
+	time{
+		margin-top: 48px;
+	}
+}
+
+@media(max-width: 767px){ 
+	.about-section{
+		flex-direction: column;
+		align-items: center;
+	}
+	.about{
+		width: 100%;
+	}
+	.content{
+		width: 100%;
+	}
+	h3{
+		line-height: 150%;
+		margin-bottom: 48px;
+	}
+	time{
+		margin-top: 48px;
+	}
+}
+
+h2{
+	font-size: 24px;
+	display: inline;
+	color:#0027D5;
+}
+
+h3{
+	font-size: 28px;
+	padding-bottom: 24px;
+	font-weight: 700;
+	margin-top: 8px;
+}
+
+.latest{
+	background-color: #0027D5;
+	color: white;
+	border-radius:40px;
+	padding:6px 12px 6px 12px;
+	display: inline;
+}
+
+.container{
+	max-width: 636px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	line-height: 150%;
+}
+
+.preface{
+	color:#0027D5;
+	margin: 0px;
+}
+
+p1{
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 12px;
+	display: block;
+}
+
+.blog-picture{
+	margin-bottom: 24px;
+	margin-top: 48px;
+}
+
+@media(max-width: 992px){
+	.blog-picture{
+		width: 100%;
+	}
+}
+
+@media(max-width: 767px){ 
+	.blog-picture{
+		width: 100%;
+	}
+}
+
+span{
+	color: #0027D5;
+}
+
+.conclusion{
+	background-color: #EDEDED;
+	border-radius: 24px;
+	padding: 24px;
+	font-weight: 700;
+}
+
+ul li {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.contact{
+	color: #0027D5;
+	text-decoration: underline;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.read-more{
+	text-decoration: none;
+	color: black;
+}
+
+.button{
+	display: flex;
+	justify-content: space-between;
+}
+
+.next-page{
+	border: 1px black solid;
+	border-radius: 40px;
+	padding: 8px 16px 8px 16px;
+	display: flex;
+	justify-content: space-between;
+	width: 108px;
+	height: 40px;
+	text-decoration: none;
+	color: black;
+}
+
+.footer{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	background-color: #FBFBFB;
+	border-top: #6C757D 1px solid;
+}
+
+@media(max-width: 992px){
+	.footer{
+		display: none;
+	}
+}
+
+@media(max-width: 767px){ 
+	.footer{
+		display: none;
+	}
+}
+
+.footer ul{
+	display: flex;
+}
+
+.footer li{
+	list-style-type: none;
+	margin: 0px;
+	max-width: 44px;
+	height: 44px;
+}
+
+.footer p{
+	font-size: 32px;
+	max-width: 1036px;
+}
+
+.footer-last{
+	padding-top: 24px;
+	padding-bottom: 24px;
+	text-align: center;
+}
+
+@media(max-width: 992px){
+	.footer-last{
+	border-top: #6C757D 1px solid;
+	}
+}
+
+@media(max-width: 767px){ 
+	.footer-last{
+		border-top: #6C757D 1px solid;
+	}
+}
+
+
+
+
+
